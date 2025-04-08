@@ -17,7 +17,7 @@ function MenuItem(props) {
 				</figcaption>
 			</figure>
 			<aside>{props.price} EUR</aside>
-			<button type="button" onClick={handleClickFavorite}>
+			<button className="buttonFavori" type="button" onClick={handleClickFavorite}>
 				{favorite ? <>❤️</> : <>🖤</>}
 			</button>
 		</section>

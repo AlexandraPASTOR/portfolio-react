@@ -54,6 +54,11 @@ button {
 	background-color: transparent;
 }
 
+.buttonFavori{
+	background-color: white;
+	
+}
+
 .pokemonProject {
 	display: block;
 	align-items: center;
@@ -89,12 +94,14 @@ button {
 
 .pokemonButton {
 	background-color: white;
+	color: #000e38;
 	padding: 5px;
 	margin: 2px;
 }
 
 .simpsonButton {
 	background-color: white;
+	color: #000e38;
 	padding: 5px;
 	margin: 2px;
 }
@@ -157,6 +164,7 @@ input {
 	height: 1rem;
 	width: 10rem;
 	border-radius: 5px;
+	background-color: white;
 }
 
 .contactButton {

@@ -10,6 +10,7 @@ import PokemonCard from "./components/PokemonCard";
 import Avatar from "./components/Avatar";
 import MenuList from "./components/MenuList";
 
+
 const personList = [
 	{
 		name: "Alexandra",
@@ -115,8 +116,9 @@ function App() {
 	const person = personList.find((person) => person.name === personName);
 
 	const [pokemonName, setPokemonName] = useState("bulbasaur");
-
 	const pokemon = pokemonList.find((pokemon) => pokemon.name === pokemonName);
+
+	const [formulaire, setFormulaire] = useState("");
 
 	if (pokemon == null) {
 		throw new Error("Invalid pokemon name");
@@ -173,7 +175,9 @@ function App() {
 				</section>
 			</main>
 			<footer>
-				<Contact />
+					<div>
+						<Contact formulaire={formulaire} setFormulaire={setFormulaire} />
+					</div>	
 			</footer>
 		</div>
 	);
