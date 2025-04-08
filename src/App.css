@@ -30,8 +30,19 @@ h3 {
 }
 
 h4 {
+	align-items: center;
+	color: white;
 	font-size: large;
 	margin-top: 0;
+}
+
+.formulaire {
+	display: flex;
+	flex-direction: column;
+	align-items : flex-end;
+	gap : 5px;
+	margin-right: 40%;
+	
 }
 
 .bouton {
@@ -40,6 +51,16 @@ h4 {
 	align-items: center;
 	justify-content: center;
 	border-radius: 5rem;
+}
+.btncontact:hover {	
+cursor:pointer;
+border-color: white;
+
+}
+
+.btncontact{
+	width : 30%;
+	margin-left: 36%;
 }
 
 button {
@@ -170,9 +191,10 @@ input {
 .contactButton {
 	background-color: white;
 	color: #000e38;
-	width: 12rem;
-	position: absolute;
-	right: 20rem;
+	width: 10.5rem;
+	margin-top: 8%;
+	align-items : center;
+	
 }
 
 .contactButton:hover {

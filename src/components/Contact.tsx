@@ -2,7 +2,7 @@ function Contact({ formulaire, setFormulaire }) {
 	return (
 		<div className="contact">
 			<hr />
-			<button
+			<button className="btncontact"
 				type="button"
 				onClick={() => setFormulaire(!formulaire)}
 			>
@@ -10,26 +10,26 @@ function Contact({ formulaire, setFormulaire }) {
 			</button>
 
 			{formulaire && (
-				<form>
+				<form className="formulaire">
 					<label>
 						Nom :
-						<input type="text" placeholder="Tapez votre nom..." />
+						<input type="text" placeholder="Tapez votre nom" />
 					</label>
 					<label>
 						Prénom :
-						<input type="text" placeholder="Tapez votre prénom..." />
+						<input type="text" placeholder="Tapez votre prénom" />
 					</label>
 					<label>
 						Numéro de téléphone :
-						<input type="text" placeholder="Tapez votre numéro de téléphone..." />
+						<input type="text" placeholder="Numéro de téléphone" />
 					</label>
 					<label>
 						Adresse mail :
-						<input type="email" placeholder="Tapez votre email..." />
+						<input type="email" placeholder="Tapez votre email" />
 					</label>
 					<label>
 						Message :
-						<input type="text" placeholder="Laissez votre message..." />
+						<input type="text" placeholder="Laissez votre message" />
 					</label>
 					<div>
 						<button
