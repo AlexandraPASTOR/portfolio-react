@@ -1,6 +1,6 @@
 #root {
 	max-width: 1280px;
-	margin: 0 auto;
+	margin: auto;
 	padding: 2rem;
 	text-align: center;
 }
@@ -29,6 +29,11 @@ h3 {
 	color: #000e38;
 }
 
+h4 {
+	font-size: large;
+	margin-top: 0;
+}
+
 .bouton {
 	display: flex;
 	gap: 8rem;
@@ -49,6 +54,83 @@ button {
 	background-color: transparent;
 }
 
+.pokemonProject {
+	display: block;
+	align-items: center;
+}
+
+.card {
+	display: block;
+	width: 200px;
+	padding: 1rem;
+	background-color: white;
+	border-radius: 5px;
+	box-shadow: 0px 0px 5px gray;
+	font-size: 1.6rem;
+	text-align: center;
+}
+.card h2 {
+	color: #000e38;
+}
+
+
+.card-img {
+	width: 100%;
+	height: auto;
+	margin-bottom: 0.5rem;
+	background-color: white;
+	border-radius: inherit;
+	box-shadow: inherit;
+}
+
+.card p {
+	color: #000e38;
+}
+
+.pokemonButton {
+	background-color: white;
+	padding: 5px;
+	margin: 2px;
+}
+
+.simpsonButton {
+	background-color: white;
+	padding: 5px;
+	margin: 2px;
+}
+
+.simpson {
+	display: flex;
+	justify-content: center;
+}
+
+figure {
+	margin: 0;
+	grid-row: 1 / -1;
+	place-self: stretch;
+	display: flex;
+}
+
+figure img {
+	width: 120px;
+	height: 100%;
+	object-fit: cover;
+}
+
+figure figcaption {
+	padding-left: 15px;
+}
+
+.itemContainer {
+	display: grid;
+	grid-template-columns: 1fr auto;
+	grid-template-rows: repeat(2, auto);
+	place-items: center;
+	border: 1px solid lightgrey;
+	margin-top: 25px;
+	padding-right: 1rem;
+}
+
 .bouton img {
 	width: 200px;
 	clip-path: circle();
@@ -56,4 +138,37 @@ button {
 
 .imgProject {
 	width: 50%;
+}
+
+hr {
+	margin: 2rem 0;
+	width: 100%;
+}
+
+.contact {
+	display: flex;
+	flex-direction: column;
+}
+
+.message {
+	height: 4rem;
+}
+input {
+	height: 1rem;
+	width: 10rem;
+	border-radius: 5px;
+}
+
+.contactButton {
+	background-color: white;
+	color: #000e38;
+	width: 12rem;
+	position: absolute;
+	right: 20rem;
+}
+
+.contactButton:hover {
+	background-color: #000e38;
+	color: white;
+	border-color: white;
 }
